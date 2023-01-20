@@ -59,9 +59,23 @@ export default {
 
         <!-- BOTTOM FOOTER SECTION -->
         <section id="bottom-footer">
-            <div class="container">
-
-            </div>
+            <nav class="container">
+                <div class="left-bottom-footer">
+                    <a href="#">SIGN-UP NOW!</a>
+                </div>
+                <div class="right-bottom-footer">
+                    <ul>
+                        <li>
+                            <h3><a href="#"> FOLLOW US </a></h3>
+                        </li>
+                        <li><a href="#"><img src="../assets/img/footer-facebook.png" alt="Facebook"></a></li>
+                        <li><a href="#"><img src="../assets/img/footer-twitter.png" alt="Twitter"></a></li>
+                        <li><a href="#"><img src="../assets/img/footer-youtube.png" alt="You Tube"></a></li>
+                        <li><a href="#"><img src="../assets/img/footer-pinterest.png" alt="Pinterest"></a></li>
+                        <li><a href="#"><img src="../assets/img/footer-periscope.png" alt="Periscope"></a></li>
+                    </ul>
+                </div>
+            </nav>
         </section>
     </footer>
 </template>
@@ -102,5 +116,37 @@ export default {
 #bottom-footer {
     background-color: $grey;
     height: 150px;
+
+    nav {
+        @include flex_center;
+
+        .left-bottom-footer {
+            a {
+                color: white;
+                border: 1px solid $blue;
+                padding: 15px;
+            }
+        }
+
+        .right-bottom-footer {
+
+            ul {
+                @include flex_center;
+
+                li {
+                    padding: 5px;
+
+                    h3 {
+
+                        a {
+                            color: $blue;
+                            padding: 0 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
 }
 </style>
