@@ -26,7 +26,7 @@ main {
 
     #main-top {
         background-color: $grey;
-        height: 180px;
+        height: 150px;
 
         h1 {
             height: 100%;
