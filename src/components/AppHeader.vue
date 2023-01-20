@@ -81,7 +81,7 @@ export default {
 
 header {
 
-    height: 150px;
+    height: 130px;
 
     nav {
 
@@ -89,7 +89,7 @@ header {
     }
 
     figure {
-        padding: 15px;
+        padding: 10px;
 
         img {
             width: 80px

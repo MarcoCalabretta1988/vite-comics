@@ -1,14 +1,19 @@
 <script>
-export default {
+import MainShopSection from './MainShopSection.vue'
 
+export default {
+    components: { MainShopSection }
 }
 </script>
 
 <template>
     <main>
-        <div class="container">
-            <h1> CONTENT GOES HERE </h1>
-        </div>
+        <section id="main-top">
+            <div class="container">
+                <h1> CONTENT GOES HERE </h1>
+            </div>
+        </section>
+        <main-shop-section></main-shop-section>
     </main>
 </template>
 
@@ -18,13 +23,17 @@ export default {
 @use '../assets/scss/portials/mixins' as *;
 
 main {
-    background-color: $grey;
-    height: 180px;
 
-    h1 {
-        height: 100%;
-        color: white;
-        @include flex_center;
+    #main-top {
+        background-color: $grey;
+        height: 180px;
+
+        h1 {
+            height: 100%;
+            color: white;
+            @include flex_center;
+        }
+
     }
 }
 
