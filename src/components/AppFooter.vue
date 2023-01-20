@@ -86,7 +86,10 @@ export default {
 @use '../assets/scss/portials/mixins' as *;
 
 #top-footer {
-    background-image: url(../assets/img/footer-bg.jpg);
+    background-image: url(../assets/img/dc-logo-bg.png), url(../assets/img/footer-bg.jpg);
+    background-position: right center, top;
+    background-size: auto, cover;
+    background-repeat: no-repeat;
     height: 400px;
     color: white;
     padding: 35px 0;
