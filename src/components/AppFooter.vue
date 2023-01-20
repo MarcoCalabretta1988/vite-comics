@@ -117,8 +117,8 @@ export default {
 }
 
 #bottom-footer {
-    background-color: $grey;
-    height: 150px;
+    background-color: $mediumgrey;
+    height: 120px;
 
     nav {
         @include flex_center;
