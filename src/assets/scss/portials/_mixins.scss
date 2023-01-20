@@ -1,5 +1,13 @@
+@use './variables.scss' as *;
+
 @mixin flex_center {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+@mixin footer_nav_style {
+    color: $lightgrey;
+    font-size: 13px;
+    padding: 2px 0;
 }

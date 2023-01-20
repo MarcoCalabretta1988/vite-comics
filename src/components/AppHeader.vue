@@ -60,14 +60,17 @@ export default {
 </script>
 
 <template>
-    <header class="container">
-        <figure>
-            <a href="#"><img src="../assets/img/dc-logo.png" alt="Dc logo"></a>
-        </figure>
-        <ul>
-            <li v-for="choise in menuChoises" :key="menuChoises.text" :class="{ 'current': choise.current }"> <a
-                    :href="choise.url">{{ choise.text }} </a></li>
-        </ul>
+    <header>
+        <nav class="container">
+
+            <figure>
+                <a href="#"><img src="../assets/img/dc-logo.png" alt="Dc logo"></a>
+            </figure>
+            <ul>
+                <li v-for="choise in menuChoises" :key="menuChoises.text" :class="{ 'current': choise.current }"> <a
+                        :href="choise.url">{{ choise.text }} </a></li>
+            </ul>
+        </nav>
     </header>
 </template>
 
@@ -77,15 +80,19 @@ export default {
 @use '../assets/scss/portials/mixins' as *;
 
 header {
-    @include flex_center;
 
     height: 150px;
 
+    nav {
+
+        @include flex_center;
+    }
+
     figure {
-        padding: 10px;
+        padding: 15px;
 
         img {
-            width: 50px
+            width: 80px
         }
     }
 
