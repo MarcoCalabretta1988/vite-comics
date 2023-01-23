@@ -1,9 +1,10 @@
 <script>
 import MainShopSection from './MainShopSection.vue'
 import ProductCard from './ProductCard.vue';
+import AppButtons from "./Appbuttons.vue"
 
 export default {
-    components: { MainShopSection, ProductCard },
+    components: { MainShopSection, ProductCard, AppButtons },
     data() {
         return {
             currentSeries: [
@@ -111,7 +112,7 @@ export default {
                     :currentSeries="currentSerie"></product-card>
             </div>
             <div class="load-more-button">
-                <button>LOAD MORE</button>
+                <app-buttons buttonText="LOAD MORE"></app-buttons>
             </div>
         </section>
         <main-shop-section></main-shop-section>
@@ -123,13 +124,7 @@ export default {
 @use '../assets/scss/portials/variables' as *;
 @use '../assets/scss/portials/mixins' as *;
 
-button {
-    padding: 10px 50px;
-    background-color: $blue;
-    font-weight: bold;
-    color: white;
-    border: none;
-}
+
 
 main {
 
