@@ -103,16 +103,17 @@ export default {
 <template>
     <main>
         <section id="main-top">
-            <div class="series-title">
-                <h1> CURRENT SERIES </h1>
-
-            </div>
-            <div class="container series-container">
-                <product-card v-for="currentSerie in currentSeries" :key="currentSerie.series"
-                    :currentSeries="currentSerie"></product-card>
-            </div>
-            <div class="load-more-button">
-                <app-buttons buttonText="LOAD MORE"></app-buttons>
+            <div class="container">
+                <div class="series-title">
+                    <h1> CURRENT SERIES </h1>
+                </div>
+                <div class="series-container">
+                    <product-card v-for="currentSerie in currentSeries" :key="currentSerie.series"
+                        :currentSeries="currentSerie"></product-card>
+                </div>
+                <div class="load-more-button">
+                    <app-buttons buttonText="LOAD MORE"></app-buttons>
+                </div>
             </div>
         </section>
         <main-shop-section></main-shop-section>
@@ -131,12 +132,12 @@ main {
     #main-top {
         background-color: $grey;
         min-height: 150px;
-        position: relative;
+
 
         .series-title {
             position: absolute;
             bottom: 95%;
-            left: 15%;
+            left: 0;
             color: white;
             padding: 10px 30px;
             background-color: $blue;
@@ -144,7 +145,8 @@ main {
         }
 
         .series-container {
-            padding: 30px 0;
+            padding-top: 50px;
+            padding-bottom: 20px;
             display: flex;
             flex-wrap: wrap;
 
@@ -160,5 +162,6 @@ main {
 
 .container {
     height: 100%;
+    position: relative;
 }
 </style>
