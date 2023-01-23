@@ -25,7 +25,11 @@ export default {
     color: white;
     padding: 1rem;
     flex-basis: calc(100% / 6);
-    cursor: pointer;
+
+    * {
+
+        cursor: pointer;
+    }
 
     figure {
         height: 180px;
