@@ -1,5 +1,8 @@
 <script>
+import HeaderJumbo from './HeaderJumbo.vue';
+
 export default {
+    components: { HeaderJumbo },
     data() {
         return {
             menuChoises: [
@@ -71,6 +74,7 @@ export default {
                         :href="choise.url">{{ choise.text }} </a></li>
             </ul>
         </nav>
+        <header-jumbo></header-jumbo>
     </header>
 </template>
 
@@ -81,7 +85,7 @@ export default {
 
 header {
 
-    height: 130px;
+    min-height: 130px;
 
     nav {
 
