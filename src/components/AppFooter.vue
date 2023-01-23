@@ -120,6 +120,10 @@ export default {
     background-color: $mediumgrey;
     height: 120px;
 
+    .container {
+        height: 100%;
+    }
+
     nav {
         @include flex_center;
 

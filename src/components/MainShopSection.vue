@@ -34,6 +34,10 @@ export default {
     height: 150px;
     background-color: $blue;
 
+    .container {
+        height: 100%;
+    }
+
     ul {
         @include flex_center;
         height: 100%;
